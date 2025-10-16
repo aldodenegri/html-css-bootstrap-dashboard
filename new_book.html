@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
+        integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
+        crossorigin='anonymous' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container-fluid bg-dark text-white py-2">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-between">
+
+                    <a href="#" class="me-3">
+                        <img src="./img/duck.png" alt="Logo" width="40" height="40">
+                    </a>
+
+                    <nav class="d-none d-lg-flex gap-4 flex-grow-1">
+                        <a href="#" class="text-white text-decoration-none">Catalogo Libri</a>
+                        <a href="#" class="text-white text-decoration-none">Anagrafica Utenti</a>
+                        <a href="#" class="text-white text-decoration-none">Storico Prestiti</a>
+                        <a href="#" class="text-white text-decoration-none">Help</a>
+                    </nav>
+
+                    <form class="d-none d-lg-flex ms-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+
+                    <div class="d-lg-none ms-auto">
+                        <button class="btn btn-outline-light" type="button">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 my-4">
+                <h3>Nuovo Libro</h3>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <label for="nomeAutore" class="form-label">Nome Autore</label>
+                            <input type="text" class="form-control" id="nomeAutore"
+                                placeholder="Inserisci il nome dell'autore">
+                        </div>
+
+                        <div class="col-6">
+                            <label for="cognomeAutore" class="form-label">Cognome Autore</label>
+                            <input type="text" class="form-control" id="cognomeAutore"
+                                placeholder="Inserisci il cognome dell'autore">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="titolo" class="form-label">Titolo</label>
+                            <input type="text" class="form-control" id="titolo"
+                                placeholder="Inserisci il titolo del libro">
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4">
+                            <label for="genere" class="form-label">Genere</label>
+                            <select class="form-select" id="genere">
+                                <option selected disabled>Scegli il genere</option>
+                                <option>Romanzo</option>
+                                <option>Fantascienza</option>
+                                <option>Storico</option>
+                                <option>Thriller</option>
+                                <option>Biografia</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4">
+                            <label for="dataPubblicazione" class="form-label">Data di pubblicazione</label>
+                            <input type="date" class="form-control" id="dataPubblicazione">
+                        </div>
+
+                        <div class="col-sm-12 col-lg-4">
+                            <label for="isbn" class="form-label">ISBN#</label>
+                            <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="note" class="form-label">Note</label>
+                            <textarea class="form-control" id="note" rows="3"
+                                placeholder="Inserisci eventuali note sul libro"></textarea>
+                        </div>
+
+                        <div class="form-check col-12">
+                            <input class="form-check-input" type="checkbox" id="digitale">
+                            <label class="form-check-label" for="digitale">
+                                Disponibile anche in digitale
+                            </label>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
