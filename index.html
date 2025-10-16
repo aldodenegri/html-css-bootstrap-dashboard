@@ -15,33 +15,34 @@
 
 <body>
   <div class="container-fluid bg-dark text-white py-2">
-    <div class="row align-items-center">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center justify-content-between">
 
-      <!-- Colonna: Logo e link -->
-      <div class="col-md-9 d-flex align-items-center">
+          <a href="#" class="me-3">
+            <img src="./img/duck.png" alt="Logo" width="40" height="40">
+          </a>
 
-        <!-- Logo -->
-        <a href="#" class="me-4">
-          <img src="./img/duck.png" alt="Logo" width="40" height="40">
-        </a>
+          <nav class="d-none d-lg-flex gap-4 flex-grow-1">
+            <a href="#" class="text-white text-decoration-none">Catalogo Libri</a>
+            <a href="#" class="text-white text-decoration-none">Anagrafica Utenti</a>
+            <a href="#" class="text-white text-decoration-none">Storico Prestiti</a>
+            <a href="#" class="text-white text-decoration-none">Help</a>
+          </nav>
 
-        <!-- Link di navigazione -->
-        <nav class="d-flex gap-4">
-          <a href="#" class="text-white text-decoration-none">Catalogo Libri</a>
-          <a href="#" class="text-white text-decoration-none text-secondry">Anagrafica Utenti</a>
-          <a href="#" class="text-white text-decoration-none text-secondry">Storico Prestiti</a>
-          <a href="#" class="text-white text-decoration-none text-secondry">Help</a>
-        </nav>
+          <form class="d-none d-lg-flex ms-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+            <button class="btn btn-outline-light" type="submit">Cerca</button>
+          </form>
+
+          <div class="d-lg-none ms-auto">
+            <button class="btn btn-outline-light" type="button">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+
+        </div>
       </div>
-
-      <!-- Colonna: Campo di ricerca -->
-      <div class="col-md-3">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
-          <button class="btn btn-outline-light" type="submit">Cerca</button>
-        </form>
-      </div>
-
     </div>
   </div>
 
@@ -131,18 +132,24 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled">
-              <li><p>Come aggiungere un nuovo libro?</p></li>
+              <li>
+                <p>Come aggiungere un nuovo libro?</p>
+              </li>
               <hr>
-              <li><p>Come posso accedre all'anagrafica utenti?</p></li>
+              <li>
+                <p>Come posso accedre all'anagrafica utenti?</p>
+              </li>
               <hr>
-              <li><p>Posso usaare questa dashbard da mobile?</p></li>
+              <li>
+                <p>Posso usaare questa dashbard da mobile?</p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
     </div>
-    
+
   </div>
 </body>
 
